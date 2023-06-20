@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Rajatp499/Chess.git/static/css/main.0289293e.css",
+    "main.js": "/Rajatp499/Chess.git/static/js/main.753ae545.js",
+    "index.html": "/Rajatp499/Chess.git/index.html",
+    "main.0289293e.css.map": "/Rajatp499/Chess.git/static/css/main.0289293e.css.map",
+    "main.753ae545.js.map": "/Rajatp499/Chess.git/static/js/main.753ae545.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0289293e.css",
+    "static/js/main.753ae545.js"
+  ]
+}
