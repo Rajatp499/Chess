@@ -1,0 +1,16 @@
+#chessboard {
+  background-color: #779556;
+  width: 650px;
+  height: 650px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+.tile-piece{
+  height: 100px;
+  width:100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

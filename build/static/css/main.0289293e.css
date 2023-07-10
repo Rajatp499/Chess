@@ -1,0 +1,2 @@
+body{box-sizing:border-box;margin:0;padding:0}#App{background-color:rgba(0,0,0,.788);height:100vh;width:100vw}#App,#chessboard{align-items:center;display:flex;justify-content:center}#chessboard{background-color:#779556;flex-wrap:wrap-reverse;height:650px;width:650px}.tile{align-items:center;display:flex;height:81.25px;justify-content:center;width:81.25px}.black-tile{background-color:#779556}.white-tile{background-color:#fff}
+/*# sourceMappingURL=main.0289293e.css.map*/
