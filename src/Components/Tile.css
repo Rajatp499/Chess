@@ -1,20 +1,20 @@
-.tile{
-    height:81.25px;
-    width:81.25px;
+.tile {
+  height: 81.25px;
+  width: 81.25px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.black-tile{
-    background-color: #779556;
+.black-tile {
+  background-color: #779556;
 }
-.white-tile{
-    background-color: white;
+.white-tile {
+  background-color: white;
 }
-.tile-piece:hover{
-    cursor: grab;
+.tile-piece:hover {
+  cursor: grab;
 }
-.tile-piece:active{
-    cursor: grabbing;
+.tile-piece:active {
+  cursor: grabbing;
 }

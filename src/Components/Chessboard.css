@@ -8,9 +8,9 @@
   justify-content: center;
   flex-wrap: wrap-reverse;
 }
-.tile-piece{
+.tile-piece {
   height: 100px;
-  width:100px;
+  width: 100px;
   background-repeat: no-repeat;
   background-position: center;
 }

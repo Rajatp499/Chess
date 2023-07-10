@@ -14,14 +14,11 @@ import queen_w from "../Pieces/queen_w.png";
 import queen_b from "../Pieces/queen_b.png";
 import king_w from "../Pieces/king_w.png";
 import king_b from "../Pieces/king_b.png";
-import path from "path";
 
 let x = ["a", "b", "c", "d", "e", "f", "g", "h"];
 let y = ["1", "2", "3", "4", "5", "6", "7", "8"];
- 
-// acac
 
-
+//
 
 interface Pieces {
   image?: string;
@@ -29,7 +26,7 @@ interface Pieces {
   y: string;
 }
 
-let activePiece:HTMLElement | null =null;
+let activePiece: HTMLElement | null = null;
 
 //MouseDown function
 const grabPiece = (e: React.MouseEvent) => {
@@ -38,14 +35,13 @@ const grabPiece = (e: React.MouseEvent) => {
 
   if (element.classList.contains("tile-piece")) {
     element.style.position = "absolute";
-    activePiece =element;
+    activePiece = element;
   }
 };
 
 //MovePiece Function
 const movePiece = (e: React.MouseEvent) => {
   if (activePiece && activePiece.classList.contains("tile-piece")) {
-
     const x = e.clientX - 50;
     const y = e.clientY - 50;
     activePiece.style.left = `${x}px`;
@@ -54,12 +50,12 @@ const movePiece = (e: React.MouseEvent) => {
 };
 
 //LeavePiece Function
-const leavePiece = (e:React.MouseEvent)=>{
+const leavePiece = (e: React.MouseEvent) => {
   const element = e.target as HTMLElement;
   if (element.classList.contains("tile-piece")) {
-  activePiece =null;
+    activePiece = null;
   }
-}
+};
 
 const Chessboard = () => {
   let board: any = [];
@@ -67,7 +63,6 @@ const Chessboard = () => {
   const piece: Pieces[] = [];
 
   //
-
 
   //Pawns
   for (let i = 0; i <= 7; i++) {
@@ -112,9 +107,9 @@ const Chessboard = () => {
   }
   return (
     <div
-    onMouseDown={(e) => grabPiece(e)}
+      onMouseDown={(e) => grabPiece(e)}
       onMouseMove={(e) => movePiece(e)}
-      onMouseUp={(e)=>leavePiece(e)}
+      onMouseUp={(e) => leavePiece(e)}
       id="chessboard"
     >
       {board}
